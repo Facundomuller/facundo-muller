@@ -68,7 +68,14 @@ export default BlogIndex
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="All posts" />
+export const Head = () => {
+
+  <>
+    <Seo title="Todos los posts" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </>
+
+}
 
 export const pageQuery = graphql`
   {
